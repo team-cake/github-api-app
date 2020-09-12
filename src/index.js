@@ -6,7 +6,7 @@ import { userReducer } from './reducer'
 import { applyMiddleware, combineReducers, createStore } from 'redux'
 import createSagaMiddleware from 'redux-saga'
 import { Provider } from 'react-redux'
-import { watchLoadUserData } from './sagas'
+import { watchLoadUserData } from './saga'
 
 // initializing saga middleware for the store
 const sagaMiddleware = createSagaMiddleware()
