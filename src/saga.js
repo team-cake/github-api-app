@@ -10,6 +10,7 @@ const baseUrl = 'https://api.github.com/users'
 // function* creates a particular function that will remember the state of function
 function* loadUserData(action) {
 	const response = yield axios.get(`${baseUrl}/${action.name}`)
+	// console.log('function*loadUserData -> response', response)
 	yield put(actions.loadUserDataSuccess(response.data))
 }
 
